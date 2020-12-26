@@ -1,2 +1,2 @@
-# Study note
-Keep some personal study notes,have source code,document note and bookn note.
+# Blog
+> include someing personal information and study note.I think no need for blog create alone web site;
