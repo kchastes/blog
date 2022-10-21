@@ -1,11 +1,16 @@
-<mxfile host="Electron" modified="2022-10-20T14:17:05.041Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="XxmXXoccOsXtFDlofghd" compressed="false" version="20.3.0" type="device">
+<mxfile host="Electron" modified="2022-10-21T15:16:29.124Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="J66PQiMLZw28YT0aoVOZ" compressed="false" version="20.3.0" type="device">
   <diagram id="UpFueUuBWqiXrLH55dX2" name="第 1 页">
-    <mxGraphModel dx="1438" dy="1041" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2130" dy="1468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-9" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=16;curved=1;dashed=1;" edge="1" parent="1" source="NWxRKm_0L-wRh15dt9WS-2" target="Faw4RQUeOR1Ntfg5_-7v-4">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-9" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=16;curved=1;dashed=1;" parent="1" source="NWxRKm_0L-wRh15dt9WS-2" target="Faw4RQUeOR1Ntfg5_-7v-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="510" />
+              <mxPoint x="705" y="510" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="k2cswU666XtifslHD5MH-2" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
           <mxGeometry x="450" y="115" width="290" height="175" as="geometry" />
@@ -293,38 +298,50 @@
         <mxCell id="Wj8xDszgT1-WGROd7AIG-4" value="&lt;font color=&quot;#000000&quot;&gt;用于管理本地方法调用。并不是所有jvm都支持本地方法，在hotspot中直接将虚拟机栈和本地方法栈合二为一。&lt;/font&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
           <mxGeometry x="1260" y="550" width="180" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-11" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=200;exitDy=110;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;dashed=1;fontSize=16;" edge="1" parent="1" source="NWxRKm_0L-wRh15dt9WS-1" target="NWxRKm_0L-wRh15dt9WS-2">
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-11" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=200;exitDy=110;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;dashed=1;fontSize=16;" parent="1" source="NWxRKm_0L-wRh15dt9WS-1" target="NWxRKm_0L-wRh15dt9WS-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;现代垃圾器大部分都是基于分代收集理论进行设计的：老年代，新生代，jdk8中将永久代换为元空间。-Xms设置最小堆（新生代和老年代）空间，-Xmx设置最堆空间，默认最小为物理内存1/64，最大1/4，开发中建议两个参数设置成一样的。s0和s1只能使用一个(算法问题)&lt;/font&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;sketch=1;fontColor=#000000;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;现代垃圾器大部分都是基于分代收集理论进行设计的：老年代，新生代，jdk8中将永久代换为元空间。-Xms设置最小堆（新生代和老年代）空间，-Xmx设置最堆空间，默认最小为物理内存1/64，最大1/4，开发中建议两个参数设置成一样的。s0和s1只能使用一个(算法问题)&lt;/font&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;sketch=1;fontColor=#000000;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-130" y="200" width="240" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-10" value="" style="group;dashed=1;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="170" y="350" width="330" height="210" as="geometry" />
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-10" value="" style="group;dashed=1;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="160" y="310" width="330" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-2" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=none;" vertex="1" parent="NWxRKm_0L-wRh15dt9WS-10">
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-2" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=none;" parent="NWxRKm_0L-wRh15dt9WS-10" vertex="1">
           <mxGeometry width="330" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-3" value="伊甸园" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#fad7ac;strokeColor=#b46504;" vertex="1" parent="NWxRKm_0L-wRh15dt9WS-10">
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-3" value="伊甸园" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#fad7ac;strokeColor=#b46504;" parent="NWxRKm_0L-wRh15dt9WS-10" vertex="1">
           <mxGeometry x="20" y="30" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-5" value="幸存0" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#d0cee2;strokeColor=#56517e;" vertex="1" parent="NWxRKm_0L-wRh15dt9WS-10">
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-5" value="幸存0" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#d0cee2;strokeColor=#56517e;" parent="NWxRKm_0L-wRh15dt9WS-10" vertex="1">
           <mxGeometry x="20" y="105" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-6" value="幸存1" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#d0cee2;strokeColor=#56517e;" vertex="1" parent="NWxRKm_0L-wRh15dt9WS-10">
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-6" value="幸存1" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#d0cee2;strokeColor=#56517e;" parent="NWxRKm_0L-wRh15dt9WS-10" vertex="1">
           <mxGeometry x="90" y="105" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-7" value="老年代" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="NWxRKm_0L-wRh15dt9WS-10">
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-7" value="老年代" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="NWxRKm_0L-wRh15dt9WS-10" vertex="1">
           <mxGeometry x="180" y="30" width="120" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-12" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;sketch=1;fontSize=16;direction=north;" vertex="1" parent="NWxRKm_0L-wRh15dt9WS-10">
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-12" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;sketch=1;fontSize=16;direction=north;" parent="NWxRKm_0L-wRh15dt9WS-10" vertex="1">
           <mxGeometry x="25" y="170" width="125" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-13" value="新生代" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;fontSize=16;" vertex="1" parent="NWxRKm_0L-wRh15dt9WS-10">
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-13" value="新生代" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;fontSize=16;" parent="NWxRKm_0L-wRh15dt9WS-10" vertex="1">
           <mxGeometry x="50" y="180" width="75" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="NWxRKm_0L-wRh15dt9WS-8" value="元空间" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#cdeb8b;strokeColor=#36393d;dashed=1;" vertex="1" parent="1">
+        <mxCell id="NWxRKm_0L-wRh15dt9WS-8" value="元空间" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#cdeb8b;strokeColor=#36393d;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="500" y="570" width="70" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="HBkNkkY0WbB6WIE76_Ar-2" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=240;exitDy=85;exitPerimeter=0;entryX=-0.001;entryY=0.658;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=16;curved=1;dashed=1;" edge="1" parent="1" source="HBkNkkY0WbB6WIE76_Ar-1" target="NWxRKm_0L-wRh15dt9WS-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HBkNkkY0WbB6WIE76_Ar-1" value="通过-XX:NewRatio设置老年代所占比例，新生代占1比例，默认是2:1。Eden和幸存者区比例默认是8:1:1，通过-XX:SurvivorRatio调整，但还存在一个自适应比例，则可能不是8:1:1。通过-XX:MaxTenuringThreshold设置晋升到老年代的阈值" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="460" width="240" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="HBkNkkY0WbB6WIE76_Ar-4" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=210;exitDy=85;exitPerimeter=0;entryX=0.092;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;fontSize=16;" edge="1" parent="1" source="HBkNkkY0WbB6WIE76_Ar-3" target="NWxRKm_0L-wRh15dt9WS-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HBkNkkY0WbB6WIE76_Ar-3" value="一般分配情况：先在Eden区分配，当满了时触发YGC存到s0，再次满时YGC清除s0和Eden存活移到s1... 。特殊情况：大对象直接进入老年代" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="-35" width="210" height="205" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
