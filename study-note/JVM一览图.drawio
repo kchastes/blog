@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2022-10-21T15:16:29.124Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="J66PQiMLZw28YT0aoVOZ" compressed="false" version="20.3.0" type="device">
+<mxfile host="Electron" modified="2022-10-24T14:42:44.667Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="dJKz0eI7FFPrLqJ3Neas" compressed="false" version="20.3.0" type="device">
   <diagram id="UpFueUuBWqiXrLH55dX2" name="第 1 页">
-    <mxGraphModel dx="2130" dy="1468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2021" dy="1154" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -331,17 +331,23 @@
         <mxCell id="NWxRKm_0L-wRh15dt9WS-8" value="元空间" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#cdeb8b;strokeColor=#36393d;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="500" y="570" width="70" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="HBkNkkY0WbB6WIE76_Ar-2" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=240;exitDy=85;exitPerimeter=0;entryX=-0.001;entryY=0.658;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=16;curved=1;dashed=1;" edge="1" parent="1" source="HBkNkkY0WbB6WIE76_Ar-1" target="NWxRKm_0L-wRh15dt9WS-2">
+        <mxCell id="HBkNkkY0WbB6WIE76_Ar-2" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=240;exitDy=85;exitPerimeter=0;entryX=-0.001;entryY=0.658;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=16;curved=1;dashed=1;" parent="1" source="HBkNkkY0WbB6WIE76_Ar-1" target="NWxRKm_0L-wRh15dt9WS-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HBkNkkY0WbB6WIE76_Ar-1" value="通过-XX:NewRatio设置老年代所占比例，新生代占1比例，默认是2:1。Eden和幸存者区比例默认是8:1:1，通过-XX:SurvivorRatio调整，但还存在一个自适应比例，则可能不是8:1:1。通过-XX:MaxTenuringThreshold设置晋升到老年代的阈值" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="HBkNkkY0WbB6WIE76_Ar-1" value="通过-XX:NewRatio设置老年代所占比例，新生代占1比例，默认是2:1。Eden和幸存者区比例默认是8:1:1，通过-XX:SurvivorRatio调整，但还存在一个自适应比例，则可能不是8:1:1。通过-XX:MaxTenuringThreshold设置晋升到老年代的阈值" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-130" y="460" width="240" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="HBkNkkY0WbB6WIE76_Ar-4" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=210;exitDy=85;exitPerimeter=0;entryX=0.092;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;fontSize=16;" edge="1" parent="1" source="HBkNkkY0WbB6WIE76_Ar-3" target="NWxRKm_0L-wRh15dt9WS-2">
+        <mxCell id="HBkNkkY0WbB6WIE76_Ar-4" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=210;exitDy=85;exitPerimeter=0;entryX=0.092;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;fontSize=16;" parent="1" source="HBkNkkY0WbB6WIE76_Ar-3" target="NWxRKm_0L-wRh15dt9WS-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HBkNkkY0WbB6WIE76_Ar-3" value="一般分配情况：先在Eden区分配，当满了时触发YGC存到s0，再次满时YGC清除s0和Eden存活移到s1... 。特殊情况：大对象直接进入老年代" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+        <mxCell id="HBkNkkY0WbB6WIE76_Ar-3" value="一般分配情况：先在Eden区分配，当满了时触发YGC存到s0，再次满时YGC清除s0和Eden存活移到s1... 。特殊情况：大对象直接进入老年代" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
           <mxGeometry x="-100" y="-35" width="210" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="R_roZfsalCL9JLNga3t_-2" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=210;exitDy=110;exitPerimeter=0;fontSize=16;curved=1;dashed=1;" edge="1" parent="1" source="R_roZfsalCL9JLNga3t_-1" target="HBkNkkY0WbB6WIE76_Ar-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_roZfsalCL9JLNga3t_-1" value="大部分都是对新生代进行收集也就是MinorGC。部分收集为MinorGc,MajorGc，混合GC新生代和老年代都会进行收集(G1)。整堆收集：老年代和方法区都会进行收集。(MajorGc和FullGc（堆和方法区）可能会存在混用，需要注意辨别)" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="35" width="210" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
