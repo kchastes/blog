@@ -1,6 +1,0 @@
-1. mysql卸载 
-    1. 检查是否安装过： rpm -qa| grep -i mysql 或者 apt list --installed|grep mysql
-    2. 服务检查：systemctl status mysql 先停止服务
-    3. 执行对应指令卸载 例如 yum remove
-    4. 删除mysql相关文件
-    5. 删除my.cnf
