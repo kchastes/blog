@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2022-10-26T16:28:28.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="sXGcgHR6OTK9YnqRFfbY" compressed="false" version="20.3.0" type="device">
+<mxfile host="Electron" modified="2022-10-29T13:56:02.693Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="Z99SDE-LspOg07qLtn5R" compressed="false" version="20.3.0" type="device">
   <diagram id="UpFueUuBWqiXrLH55dX2" name="第 1 页">
-    <mxGraphModel dx="2687" dy="1565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
+    <mxGraphModel dx="4966" dy="2231" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -436,32 +436,121 @@
         <mxCell id="QNYa-5U0eoqXuhPoqmon-25" value="方法区" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-390" y="1109" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uv1YOnGlwENCFTyIBZJ1-2" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=210;exitDy=80;exitPerimeter=0;fontSize=16;curved=1;dashed=1;" edge="1" parent="1" source="uv1YOnGlwENCFTyIBZJ1-1" target="NWxRKm_0L-wRh15dt9WS-8">
+        <mxCell id="0Pi-LokqyWZVhyo1OsTR-1" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=230;exitDy=90.5;exitPerimeter=0;curved=1;dashed=1;" parent="1" source="uv1YOnGlwENCFTyIBZJ1-1" target="NWxRKm_0L-wRh15dt9WS-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="uv1YOnGlwENCFTyIBZJ1-1" value="方法区如何实现JVM并没有明确规定，原来是使用永久代实现的方法区，后面改为元空间。通过-XX:MetaspaceSize和-XX:MaxMetaspaceSize设置，如果不设置，将会耗尽所有可用系统内存。" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-170" y="670" width="220" height="140" as="geometry" />
+        <mxCell id="uv1YOnGlwENCFTyIBZJ1-1" value="方法区如何实现JVM并没有明确规定，原来是使用永久代实现的方法区，后面改为元空间，替换的原因就是为了整合JRockit。通过-XX:MetaspaceSize和-XX:MaxMetaspaceSize设置，如果不设置，将会耗尽所有可用系统内存。" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-160" y="640" width="230" height="161" as="geometry" />
         </mxCell>
-        <mxCell id="uv1YOnGlwENCFTyIBZJ1-3" value="元空间" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="uv1YOnGlwENCFTyIBZJ1-3" value="元空间" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="300" y="600" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uv1YOnGlwENCFTyIBZJ1-4" value="类型信息" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+        <mxCell id="uv1YOnGlwENCFTyIBZJ1-4" value="类型信息" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" parent="1" vertex="1">
           <mxGeometry x="180" y="640" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uv1YOnGlwENCFTyIBZJ1-5" value="&lt;font color=&quot;#000000&quot;&gt;域信息&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+        <mxCell id="uv1YOnGlwENCFTyIBZJ1-5" value="&lt;font color=&quot;#000000&quot;&gt;域信息&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
           <mxGeometry x="180" y="710" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uv1YOnGlwENCFTyIBZJ1-6" value="方法信息" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#fa6800;strokeColor=#C73500;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="uv1YOnGlwENCFTyIBZJ1-6" value="方法信息" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#fa6800;strokeColor=#C73500;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="310" y="640" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uv1YOnGlwENCFTyIBZJ1-7" value="运行时常量池" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fontColor=#000000;fillColor=#76608a;strokeColor=#432D57;" vertex="1" parent="1">
+        <mxCell id="uv1YOnGlwENCFTyIBZJ1-7" value="运行时常量池" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fontColor=#000000;fillColor=#76608a;strokeColor=#432D57;" parent="1" vertex="1">
           <mxGeometry x="310" y="710" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uv1YOnGlwENCFTyIBZJ1-9" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="uv1YOnGlwENCFTyIBZJ1-8" target="uv1YOnGlwENCFTyIBZJ1-7">
+        <mxCell id="uv1YOnGlwENCFTyIBZJ1-9" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;fontSize=16;fontColor=#000000;" parent="1" source="uv1YOnGlwENCFTyIBZJ1-8" target="uv1YOnGlwENCFTyIBZJ1-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="uv1YOnGlwENCFTyIBZJ1-8" value="将字节码中的常量池加载到方法区后就称为运行时常量池" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fontColor=#000000;fillColor=#e3c800;strokeColor=#B09500;" vertex="1" parent="1">
-          <mxGeometry x="240" y="880" width="160" height="100" as="geometry" />
+        <mxCell id="uv1YOnGlwENCFTyIBZJ1-8" value="将字节码中的常量池加载到方法区后就称为运行时常量池，每个类都有一个运行时常量池，静态变量和字符串常量池保存在堆中" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fontColor=#000000;fillColor=#e3c800;strokeColor=#B09500;" parent="1" vertex="1">
+          <mxGeometry x="190" y="900" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="0Pi-LokqyWZVhyo1OsTR-3" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=190;exitDy=85;exitPerimeter=0;entryX=0.124;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;fontSize=16;" parent="1" source="0Pi-LokqyWZVhyo1OsTR-2" target="NWxRKm_0L-wRh15dt9WS-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0Pi-LokqyWZVhyo1OsTR-2" value="转为永久代的原因：1.永久代空间大小比较难确定(动态加载的类较多)，同时也不容易出现gc。字符串常量池在方法区回收效率低，很难被回收，只在full gc时回收" style="shape=note;size=20;whiteSpace=wrap;html=1;fontSize=16;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="840" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-26" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-1640" y="149.25" width="580" height="1071.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-11" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=none;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry width="580" height="1071.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-1" value="对象创建" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;sketch=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="72.5" y="70" width="130" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-2" value="类是否加载链接初始化" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;sketch=1;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="60" y="237.5" width="155" height="67.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PTqRYyR6Z93qbdHQqHBV-26" source="PTqRYyR6Z93qbdHQqHBV-1" target="PTqRYyR6Z93qbdHQqHBV-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-4" value="遇到new指令，使用当前类加载器进行查找class文件，找到则进行类加载，生成对应Class对象" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;strokeWidth=2;sketch=1;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="332.5" y="239.25" width="160" height="63.75" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PTqRYyR6Z93qbdHQqHBV-26" source="PTqRYyR6Z93qbdHQqHBV-2" target="PTqRYyR6Z93qbdHQqHBV-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-8" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PTqRYyR6Z93qbdHQqHBV-5">
+          <mxGeometry x="-0.2487" y="1" relative="1" as="geometry">
+            <mxPoint x="13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-6" value="分配内存" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;sketch=1;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="60" y="371.25" width="155" height="67.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PTqRYyR6Z93qbdHQqHBV-26" source="PTqRYyR6Z93qbdHQqHBV-2" target="PTqRYyR6Z93qbdHQqHBV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-9" value="对象内存大小在此处就可以确定，引用类型4个字节，内存规整使用指针碰撞：移动指针划分内存。不规整使用空闲列表进行分配：由一个列表记录了哪些内存块是可用的。用哪种取决于回收算法" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;sketch=1;fontColor=#333333;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="332.5" y="352" width="180" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PTqRYyR6Z93qbdHQqHBV-26" source="PTqRYyR6Z93qbdHQqHBV-6" target="PTqRYyR6Z93qbdHQqHBV-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-12" value="处理并发安全问题" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;sketch=1;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="60" y="518.75" width="155" height="67.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PTqRYyR6Z93qbdHQqHBV-26" source="PTqRYyR6Z93qbdHQqHBV-6" target="PTqRYyR6Z93qbdHQqHBV-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-14" value="会使用区域加锁或CAS，线程中TLAB提高性能" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;sketch=1;fontColor=#333333;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="312.5" y="522.5" width="197.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PTqRYyR6Z93qbdHQqHBV-26" source="PTqRYyR6Z93qbdHQqHBV-12" target="PTqRYyR6Z93qbdHQqHBV-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-16" value="初始化分配空间" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;sketch=1;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="60" y="666.25" width="155" height="67.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PTqRYyR6Z93qbdHQqHBV-26" source="PTqRYyR6Z93qbdHQqHBV-12" target="PTqRYyR6Z93qbdHQqHBV-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-18" value="初始化零值" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;sketch=1;fontColor=#333333;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="312.5" y="670" width="197.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PTqRYyR6Z93qbdHQqHBV-26" source="PTqRYyR6Z93qbdHQqHBV-16" target="PTqRYyR6Z93qbdHQqHBV-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-20" value="设置对象头" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;sketch=1;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="60" y="813.75" width="155" height="67.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PTqRYyR6Z93qbdHQqHBV-26" source="PTqRYyR6Z93qbdHQqHBV-16" target="PTqRYyR6Z93qbdHQqHBV-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-22" value="显示初始化init方法" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;sketch=1;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="60" y="961.25" width="155" height="67.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PTqRYyR6Z93qbdHQqHBV-26" source="PTqRYyR6Z93qbdHQqHBV-20" target="PTqRYyR6Z93qbdHQqHBV-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-24" value="显示赋值和代码块，构造函数，将堆地址赋值给引用变量" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;sketch=1;fontColor=#333333;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="312.5" y="965" width="197.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PTqRYyR6Z93qbdHQqHBV-26" source="PTqRYyR6Z93qbdHQqHBV-22" target="PTqRYyR6Z93qbdHQqHBV-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PTqRYyR6Z93qbdHQqHBV-27" value="对象创建过程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;" vertex="1" parent="PTqRYyR6Z93qbdHQqHBV-26">
+          <mxGeometry x="280" y="85.75" width="150" height="54.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
