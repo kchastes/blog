@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2022-10-31T08:29:53.848Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="xXRosQgCI-RWpOKWf1AN" compressed="false" version="20.3.0" type="device">
+<mxfile host="Electron" modified="2022-10-31T16:13:58.972Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="OmNLDnVAaV_Sl96oaWbO" compressed="false" version="20.3.0" type="device">
   <diagram id="UpFueUuBWqiXrLH55dX2" name="第 1 页">
-    <mxGraphModel dx="2065" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2238" dy="1041" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -612,7 +612,7 @@
         <mxCell id="8GvSQY6zKQZyWIIbRPnl-93" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=196.99999999999997;exitDy=100;exitPerimeter=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;dashed=1;fontSize=16;" parent="1" source="8GvSQY6zKQZyWIIbRPnl-92" target="Faw4RQUeOR1Ntfg5_-7v-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8GvSQY6zKQZyWIIbRPnl-92" value="将字节码指令解释或编译为对应平台上的机器指令，依赖于程序计数器中的值。" style="shape=note;size=20;whiteSpace=wrap;html=1;dashed=1;sketch=1;fontSize=16;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
+        <mxCell id="8GvSQY6zKQZyWIIbRPnl-92" value="将字节码指令解释或编译为对应平台上的机器指令，依赖于程序计数器中的值。解释器：将字节码文件逐条翻译为对应平台的本地机器指令，JIT编译器：将源代码直接编译成本地机器相关的指令。" style="shape=note;size=20;whiteSpace=wrap;html=1;dashed=1;sketch=1;fontSize=16;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
           <mxGeometry x="400" y="840" width="197" height="180" as="geometry" />
         </mxCell>
       </root>
