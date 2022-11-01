@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2022-10-31T16:13:58.972Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="OmNLDnVAaV_Sl96oaWbO" compressed="false" version="20.3.0" type="device">
+<mxfile host="Electron" modified="2022-11-01T13:30:44.437Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="0pYjkFBvlRHwNF_ORXJw" compressed="false" version="20.3.0" type="device">
   <diagram id="UpFueUuBWqiXrLH55dX2" name="第 1 页">
-    <mxGraphModel dx="2238" dy="1041" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
+    <mxGraphModel dx="4166" dy="2231" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -612,8 +612,20 @@
         <mxCell id="8GvSQY6zKQZyWIIbRPnl-93" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=196.99999999999997;exitDy=100;exitPerimeter=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;dashed=1;fontSize=16;" parent="1" source="8GvSQY6zKQZyWIIbRPnl-92" target="Faw4RQUeOR1Ntfg5_-7v-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8GvSQY6zKQZyWIIbRPnl-92" value="将字节码指令解释或编译为对应平台上的机器指令，依赖于程序计数器中的值。解释器：将字节码文件逐条翻译为对应平台的本地机器指令，JIT编译器：将源代码直接编译成本地机器相关的指令。" style="shape=note;size=20;whiteSpace=wrap;html=1;dashed=1;sketch=1;fontSize=16;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
-          <mxGeometry x="400" y="840" width="197" height="180" as="geometry" />
+        <mxCell id="8GvSQY6zKQZyWIIbRPnl-92" value="将字节码指令解释或编译为对应平台上的机器指令，依赖于程序计数器中的值。解释器：将字节码文件逐条翻译为对应平台的本地机器指令，JIT编译器：将源代码直接编译成本地机器相关的指令。解释器响应速度快，一启动便可以执行，JIT需要先进行翻译缓存，然后再执行" style="shape=note;size=20;whiteSpace=wrap;html=1;dashed=1;sketch=1;fontSize=16;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
+          <mxGeometry x="400" y="840" width="197" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Pn5wc4WhNsuEJSO0tF4--2" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;dashed=1;" edge="1" parent="1" source="Pn5wc4WhNsuEJSO0tF4--1" target="Faw4RQUeOR1Ntfg5_-7v-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pn5wc4WhNsuEJSO0tF4--1" value="通过热点代码探测(计数器)，判断是否是热点代码，决定是否使用JIT。通过参数-XX:CompileThreshold设置。存在热度衰减，通过-XX:UseCounterDecay关闭，这样绝大部分方法都可以被编译" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="969" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Pn5wc4WhNsuEJSO0tF4--4" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.887;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="Pn5wc4WhNsuEJSO0tF4--3" target="Faw4RQUeOR1Ntfg5_-7v-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pn5wc4WhNsuEJSO0tF4--3" value="使用-Xint完全采用及时编译器执行程序，-XComp完全采用及时编译器执行，出现问题，解释器会介入" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+          <mxGeometry x="830" y="974" width="135" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
