@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2022-11-01T13:30:44.437Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="0pYjkFBvlRHwNF_ORXJw" compressed="false" version="20.3.0" type="device">
+<mxfile host="Electron" modified="2022-11-02T16:06:38.023Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="SceVopAx2X4RktHHhSkj" compressed="false" version="20.3.0" type="device">
   <diagram id="UpFueUuBWqiXrLH55dX2" name="第 1 页">
-    <mxGraphModel dx="4166" dy="2231" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2421" dy="1554" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -206,7 +206,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="k2cswU666XtifslHD5MH-1" value="每个线程都有一个虚拟机栈，其内部都是一个一个的栈帧，用于保存方法的局部变量，部分结果，一个方法就是一个栈帧" style="shape=note;strokeWidth=2;fontSize=16;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;sketch=1;" parent="1" vertex="1">
-          <mxGeometry x="210" width="170" height="220" as="geometry" />
+          <mxGeometry x="230" y="-10" width="170" height="220" as="geometry" />
         </mxCell>
         <mxCell id="k2cswU666XtifslHD5MH-12" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="470" y="130" width="70" height="145" as="geometry" />
@@ -446,16 +446,16 @@
           <mxGeometry x="300" y="600" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uv1YOnGlwENCFTyIBZJ1-4" value="类型信息" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" parent="1" vertex="1">
-          <mxGeometry x="180" y="640" width="120" height="60" as="geometry" />
+          <mxGeometry x="200" y="640" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uv1YOnGlwENCFTyIBZJ1-5" value="&lt;font color=&quot;#000000&quot;&gt;域信息&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
-          <mxGeometry x="180" y="710" width="120" height="60" as="geometry" />
+          <mxGeometry x="200" y="710" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uv1YOnGlwENCFTyIBZJ1-6" value="方法信息" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fillColor=#fa6800;strokeColor=#C73500;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="310" y="640" width="120" height="60" as="geometry" />
+          <mxGeometry x="360" y="640" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uv1YOnGlwENCFTyIBZJ1-7" value="运行时常量池" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=16;fontColor=#000000;fillColor=#76608a;strokeColor=#432D57;" parent="1" vertex="1">
-          <mxGeometry x="310" y="710" width="120" height="60" as="geometry" />
+          <mxGeometry x="360" y="710" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uv1YOnGlwENCFTyIBZJ1-9" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;fontSize=16;fontColor=#000000;" parent="1" source="uv1YOnGlwENCFTyIBZJ1-8" target="uv1YOnGlwENCFTyIBZJ1-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -615,17 +615,44 @@
         <mxCell id="8GvSQY6zKQZyWIIbRPnl-92" value="将字节码指令解释或编译为对应平台上的机器指令，依赖于程序计数器中的值。解释器：将字节码文件逐条翻译为对应平台的本地机器指令，JIT编译器：将源代码直接编译成本地机器相关的指令。解释器响应速度快，一启动便可以执行，JIT需要先进行翻译缓存，然后再执行" style="shape=note;size=20;whiteSpace=wrap;html=1;dashed=1;sketch=1;fontSize=16;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
           <mxGeometry x="400" y="840" width="197" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="Pn5wc4WhNsuEJSO0tF4--2" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;dashed=1;" edge="1" parent="1" source="Pn5wc4WhNsuEJSO0tF4--1" target="Faw4RQUeOR1Ntfg5_-7v-17">
+        <mxCell id="Pn5wc4WhNsuEJSO0tF4--2" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;dashed=1;" parent="1" source="Pn5wc4WhNsuEJSO0tF4--1" target="Faw4RQUeOR1Ntfg5_-7v-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Pn5wc4WhNsuEJSO0tF4--1" value="通过热点代码探测(计数器)，判断是否是热点代码，决定是否使用JIT。通过参数-XX:CompileThreshold设置。存在热度衰减，通过-XX:UseCounterDecay关闭，这样绝大部分方法都可以被编译" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;" vertex="1" parent="1">
+        <mxCell id="Pn5wc4WhNsuEJSO0tF4--1" value="通过热点代码探测(计数器)，判断是否是热点代码，决定是否使用JIT。通过参数-XX:CompileThreshold设置。存在热度衰减，通过-XX:UseCounterDecay关闭，这样绝大部分方法都可以被编译" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;" parent="1" vertex="1">
           <mxGeometry x="630" y="969" width="170" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="Pn5wc4WhNsuEJSO0tF4--4" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.887;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="Pn5wc4WhNsuEJSO0tF4--3" target="Faw4RQUeOR1Ntfg5_-7v-17">
+        <mxCell id="Pn5wc4WhNsuEJSO0tF4--4" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.887;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="Pn5wc4WhNsuEJSO0tF4--3" target="Faw4RQUeOR1Ntfg5_-7v-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Pn5wc4WhNsuEJSO0tF4--3" value="使用-Xint完全采用及时编译器执行程序，-XComp完全采用及时编译器执行，出现问题，解释器会介入" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+        <mxCell id="Pn5wc4WhNsuEJSO0tF4--3" value="使用-Xint完全采用及时编译器执行程序，-XComp完全采用及时编译器执行，出现问题，解释器会介入" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
           <mxGeometry x="830" y="974" width="135" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ntzz9-YmQm9zIjBk8yGA-2" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;curved=1;dashed=1;" edge="1" parent="1" source="ntzz9-YmQm9zIjBk8yGA-1" target="NWxRKm_0L-wRh15dt9WS-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="-70" />
+              <mxPoint x="190" y="240" />
+              <mxPoint x="325" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ntzz9-YmQm9zIjBk8yGA-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="-270" width="290" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ntzz9-YmQm9zIjBk8yGA-3" value="String Table" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="125" y="-185" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ntzz9-YmQm9zIjBk8yGA-5" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=205;exitDy=125.00000000000001;exitPerimeter=0;dashed=1;fontSize=18;" edge="1" parent="1" source="ntzz9-YmQm9zIjBk8yGA-4" target="ntzz9-YmQm9zIjBk8yGA-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ntzz9-YmQm9zIjBk8yGA-4" value="字符串常量池就是一个HashTable，默认大小是60013，通过-XX:StringTableSize设置，固定大小，不会扩容。在jdk9使用了byte数组存储，主要是为了节省空间。" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fontSize=18;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="-360" width="205" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ntzz9-YmQm9zIjBk8yGA-7" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;dashed=1;fontSize=18;" edge="1" parent="1" source="ntzz9-YmQm9zIjBk8yGA-6" target="ntzz9-YmQm9zIjBk8yGA-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ntzz9-YmQm9zIjBk8yGA-6" value="通过字面量方式赋值，直接在常量池声明，拼接中，只要有一个是变量，结果就在堆中，调用Intern方法，主动将常量池中还没有的字符串对象放入常量池中，并返回地址。" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fontSize=18;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="-550" width="200" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
