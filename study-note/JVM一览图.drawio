@@ -1,10 +1,10 @@
-<mxfile host="Electron" modified="2022-11-03T14:34:55.529Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="9ozMZi72dBK30tSiB1BP" compressed="false" version="20.3.0" type="device">
+<mxfile host="Electron" modified="2022-11-04T14:40:12.031Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="niTJ_GSLHSeTQozkbJ4a" compressed="false" version="20.3.0" type="device">
   <diagram id="UpFueUuBWqiXrLH55dX2" name="第 1 页">
-    <mxGraphModel dx="4195" dy="2803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3487" dy="2365" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Emk17l_hjG-QX1Q-ruUi-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="Emk17l_hjG-QX1Q-ruUi-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-1450" y="-810" width="3650" height="2270" as="geometry" />
         </mxCell>
         <mxCell id="NWxRKm_0L-wRh15dt9WS-9" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=16;curved=1;dashed=1;" parent="1" source="NWxRKm_0L-wRh15dt9WS-2" target="Faw4RQUeOR1Ntfg5_-7v-4" edge="1">
@@ -657,17 +657,49 @@
         <mxCell id="ntzz9-YmQm9zIjBk8yGA-6" value="通过字面量方式赋值，直接在常量池声明，拼接中，只要有一个是变量，结果就在堆中，调用Intern方法，主动将常量池中还没有的字符串对象放入常量池中，并返回地址。" style="shape=note;size=20;whiteSpace=wrap;html=1;sketch=1;fontSize=18;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
           <mxGeometry x="-40" y="-550" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="Emk17l_hjG-QX1Q-ruUi-3" value="&lt;font style=&quot;font-size: 32px;&quot;&gt;内存结构&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="Emk17l_hjG-QX1Q-ruUi-3" value="&lt;font style=&quot;font-size: 32px;&quot;&gt;内存结构&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="130" y="-750" width="630" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Emk17l_hjG-QX1Q-ruUi-7" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fontSize=32;" edge="1" parent="1" source="Emk17l_hjG-QX1Q-ruUi-4" target="Emk17l_hjG-QX1Q-ruUi-5">
+        <mxCell id="Emk17l_hjG-QX1Q-ruUi-7" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fontSize=32;" parent="1" source="Emk17l_hjG-QX1Q-ruUi-4" target="Emk17l_hjG-QX1Q-ruUi-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Emk17l_hjG-QX1Q-ruUi-4" value="没有任何指针指向的对象就是垃圾，GC的原因就是清理垃圾，清除内存碎片" style="shape=note;size=20;whiteSpace=wrap;html=1;fontSize=32;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;" vertex="1" parent="1">
-          <mxGeometry x="-420" y="2690" width="299" height="280" as="geometry" />
+        <mxCell id="Emk17l_hjG-QX1Q-ruUi-4" value="没有任何指针指向的对象就是垃圾，GC的原因就是清理垃圾，清除内存碎片。内存泄漏：是垃圾但无法回收。垃圾回收的坏处：不清楚内部细节，增加定位和解决问题的复杂度" style="shape=note;size=20;whiteSpace=wrap;html=1;fontSize=32;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;" parent="1" vertex="1">
+          <mxGeometry x="-765" y="2320" width="400" height="350" as="geometry" />
         </mxCell>
-        <mxCell id="Emk17l_hjG-QX1Q-ruUi-5" value="垃圾回收" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=32;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-10" y="3080" width="280" height="250" as="geometry" />
+        <mxCell id="aAcWqloyrWQl4pRKWsVE-21" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=18;curved=1;dashed=1;" edge="1" parent="1" source="Emk17l_hjG-QX1Q-ruUi-5" target="aAcWqloyrWQl4pRKWsVE-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Emk17l_hjG-QX1Q-ruUi-5" value="垃圾回收" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontSize=32;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-260" y="2750" width="280" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="aAcWqloyrWQl4pRKWsVE-11" value="垃圾标记" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="-1130" y="2790" width="590" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="aAcWqloyrWQl4pRKWsVE-12" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="aAcWqloyrWQl4pRKWsVE-11">
+          <mxGeometry y="30" width="590" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aAcWqloyrWQl4pRKWsVE-13" value="引用计数法" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;fontSize=18;fontStyle=1" vertex="1" parent="aAcWqloyrWQl4pRKWsVE-12">
+          <mxGeometry width="242" height="120" as="geometry">
+            <mxRectangle width="242" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aAcWqloyrWQl4pRKWsVE-14" value="为每个对象保存了一个整型的应用计数器，每引用一个该对象，则该对象的计数器加1。为0则可以回收。优点实现简单，判断效率高。缺点：空间消耗，无法处理循环引用" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontSize=18;" vertex="1" parent="aAcWqloyrWQl4pRKWsVE-12">
+          <mxGeometry x="242" width="348" height="120" as="geometry">
+            <mxRectangle width="348" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aAcWqloyrWQl4pRKWsVE-15" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="aAcWqloyrWQl4pRKWsVE-11">
+          <mxGeometry y="150" width="590" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aAcWqloyrWQl4pRKWsVE-16" value="2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontSize=18;" vertex="1" parent="aAcWqloyrWQl4pRKWsVE-15">
+          <mxGeometry width="242" height="90" as="geometry">
+            <mxRectangle width="242" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aAcWqloyrWQl4pRKWsVE-17" value="Value 2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontSize=18;" vertex="1" parent="aAcWqloyrWQl4pRKWsVE-15">
+          <mxGeometry x="242" width="348" height="90" as="geometry">
+            <mxRectangle width="348" height="90" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
